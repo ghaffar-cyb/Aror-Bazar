@@ -1,28 +1,44 @@
-# Project Name
+# Aror Bazar - Console E-Commerce System
 
-Short description of your project — what it does and why it exists.
+**Aror Bazar** is a console-based C++ application that simulates a digital marketplace. It features a complete login system, product management for administrators, and a shopping experience for users with data persistence using CSV files.
 
-## Features
-- Feature 1  
-- Feature 2  
-- Feature 3  
+## 🚀 Features
 
-## Installation
-1. Clone the repository  
-   git clone <repo-link>
+### 👤 User Panel
+* **Registration & Login:** Secure account creation and authentication.
+* **Password Recovery:** "Forget ID" functionality to retrieve credentials.
+* **Shopping:** Browse products by category (Laptops, Mobiles, Accessories).
+* **Checkout:** Simulates payment processing (Bank/Cash) and tracks delivery details.
 
-2. Open the project folder  
-   cd project-name
+### 🛠 Admin Panel
+* **Dashboard:** View all registered users and inventory status.
+* **Product Management:** Add, Update, and Remove products dynamically.
+* **Sales Tracking:** View a log of all customer purchases.
 
-3. Run the program  
-   ./program
+### 💾 Data Persistence
+The system uses file handling to store data permanently:
+* `users.csv`: Stores user credentials.
+* `products.csv`: Stores inventory details.
+* `purchases.csv`: Stores order history.
 
-## Usage
-Explain in 1–2 lines how to use the project.
+## 🔧 Technologies Used
+* **Language:** C++
+* **Concepts:** File Handling (`fstream`), Structures, Arrays, Threading (for animations).
+* **Libraries:** `iostream`, `conio.h` (Windows-specific UI), `thread`, `iomanip`.
 
-## Technologies
-- Language:  
-- Tools:  
+## ⚙️ How to Run
 
-## Author
-Your Name
+1.  **Compile:** Use a C++ compiler (like g++ or via Dev-C++/Visual Studio).
+    ```bash
+    g++ "Aror Bazar.cpp" -o aror_bazar
+    ```
+2.  **Run:** Execute the generated `.exe` file.
+3.  **Files:** Ensure the program has permission to create/read `.csv` files in the same directory.
+
+## 🔑 Default Admin Credentials
+To access the Admin Panel, use the credentials hardcoded in the source:
+* **Username:** `Ghaffar`
+* **Password:** `1122`
+
+## 📝 Note
+This project utilizes `<conio.h>` and `system("CLS")`, making it optimized for **Windows** environments.
